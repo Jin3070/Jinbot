@@ -1,0 +1,14 @@
+discord.py==0.16.12
+re
+time
+turtle
+bs4
+asyncio
+inda
+json
+openpyxl
+datetime
+youtube_dl
+selenium
+random
+requests
