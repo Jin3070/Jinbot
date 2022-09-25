@@ -1,4 +1,5 @@
 from ast import Break
+import os
 import datetime
 from base64 import urlsafe_b64decode, urlsafe_b64encode
 import filecmp
@@ -70,7 +71,6 @@ upd = datetime.datetime.today().hour
 upe = datetime.datetime.today().minute
 upf = datetime.datetime.today().second
 client = discord.Client()
-token = "OTI4ODc0NjgwMjI2NTY2MTc0.YdfH9Q.3fTHsJG-R1DbMFvB8fZ_DRB8QTU"
 @client.event
 async def on_ready():
     print(client.user.name)
@@ -787,5 +787,5 @@ bot.command()
 
 
 
-
-client.run(token)
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
